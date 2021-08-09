@@ -1,0 +1,9 @@
+name: auto deploy
+on: push 
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps: 
+      - name: RunBash
+        run: sudo -i /actions/bs/graduationProject/deploy.sh
